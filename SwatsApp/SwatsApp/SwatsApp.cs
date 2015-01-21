@@ -1,4 +1,7 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
 
 using Xamarin.Forms;
 
@@ -9,22 +12,14 @@ namespace SwatsApp
 		public App ()
 		{
 			// The root page of your application
-			MainPage = new ContentPage {
-				BackgroundColor = new Color(100,0,0),
-				Content = new StackLayout {
-					VerticalOptions = LayoutOptions.Center,
-					Children = {
-						new Label {
-							XAlign = TextAlignment.Center,
-							Text = "Welkom bij SwatsApp!"
-						},
-						new Label {
-							XAlign = TextAlignment.Center,
-							Text = "Dit is de officiele app van CV De Swatsers."
-						}
-					}
-				}
-			};
+			//MainPage = new Tabbar();
+
+			var tp = new TabbedPage ();
+			tp.Children.Add (new ContentPage { BackgroundColor = Color.Red, Title = "Home" });
+			tp.Children.Add (new ContentPage { BackgroundColor = Color.Green, Title = "Foto's" });
+			tp.Children.Add (new ContentPage { BackgroundColor = Color.Blue, Title = "Agenda" });
+
+			MainPage = tp;
 		}
 
 		protected override void OnStart ()
