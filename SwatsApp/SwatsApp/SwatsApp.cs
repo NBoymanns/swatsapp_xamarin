@@ -12,12 +12,10 @@ namespace SwatsApp
 		public App ()
 		{
 			// The root page of your application
-			//MainPage = new Tabbar();
-
 			var tp = new TabbedPage ();
-			tp.Children.Add (new ContentPage { BackgroundColor = Color.Red, Title = "Home" });
-			tp.Children.Add (new ContentPage { BackgroundColor = Color.Green, Title = "Foto's" });
-			tp.Children.Add (new ContentPage { BackgroundColor = Color.Blue, Title = "Agenda" });
+			tp.Children.Add (new NavigationPage (new HomePage ()) { Title="Home"});
+			tp.Children.Add (new NavigationPage (new FotosPage ()) { Title="Foto's"});
+			tp.Children.Add (new NavigationPage (new AgendaPage ()) { Title="Agenda"});
 
 			MainPage = tp;
 		}
