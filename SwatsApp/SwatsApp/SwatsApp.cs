@@ -13,9 +13,9 @@ namespace SwatsApp
 		{
 			// The root page of your application
 			var tp = new TabbedPage ();
-			tp.Children.Add (new NavigationPage (new HomePage ()) { Title="Home"});
-			tp.Children.Add (new NavigationPage (new FotosPage ()) { Title="Foto's"});
-			tp.Children.Add (new NavigationPage (new AgendaPage ()) { Title="Agenda"});
+			tp.Children.Add (new NavigationPage (new HomePage ()) { Title="Home", Icon="home.png"});
+			tp.Children.Add (new NavigationPage (new FotosPage ()) { Title="Foto's", Icon="fotos.png"});
+			tp.Children.Add (new NavigationPage (new AgendaPage ()) { Title="Agenda", Icon="agenda.png"});
 
 			MainPage = tp;
 		}

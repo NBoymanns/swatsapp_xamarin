@@ -48,7 +48,7 @@ namespace SwatsApp.Droid
 			public const int icon = 2130837504;
 			
 			// aapt resource value: 0x7f020001
-			public const int monoandroidsplash = 2130837505;
+			public const int plus = 2130837505;
 			
 			static Drawable()
 			{
@@ -56,22 +56,6 @@ namespace SwatsApp.Droid
 			}
 			
 			private Drawable()
-			{
-			}
-		}
-		
-		public partial class Style
-		{
-			
-			// aapt resource value: 0x7f030000
-			public const int Mono_Android_Theme_Splash = 2130903040;
-			
-			static Style()
-			{
-				global::Android.Runtime.ResourceIdManager.UpdateIdValues();
-			}
-			
-			private Style()
 			{
 			}
 		}

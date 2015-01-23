@@ -127,6 +127,18 @@
     <BundleResource Include="Resources\Icon-Small-40%403x.png" />
     <BundleResource Include="Resources\Icon.png" />
     <BundleResource Include="Resources\Icon%402x.png" />
+    <BundleResource Include="Resources\agenda.png" />
+    <BundleResource Include="Resources\agenda%402x.png" />
+    <BundleResource Include="Resources\agenda%403x.png" />
+    <BundleResource Include="Resources\fotos.png" />
+    <BundleResource Include="Resources\fotos%402x.png" />
+    <BundleResource Include="Resources\fotos%403x.png" />
+    <BundleResource Include="Resources\home.png" />
+    <BundleResource Include="Resources\home%402x.png" />
+    <BundleResource Include="Resources\home%403x.png" />
+    <BundleResource Include="Resources\plus.png" />
+    <BundleResource Include="Resources\plus%402x.png" />
+    <BundleResource Include="Resources\plus%403x.png" />
   </ItemGroup>
   <ItemGroup>
     <InterfaceDefinition Include="Resources\LaunchScreen.storyboard" />
