@@ -16,10 +16,10 @@ namespace SwatsApp.iOS
 
 			LoadApplication (new App ());
 
-			UINavigationBar.Appearance.BarTintColor = UIColor.FromRGB(0, 153, 204);
+			UINavigationBar.Appearance.BarTintColor = UIColor.FromRGB(0, 153, 204); //#0099cc
 			UINavigationBar.Appearance.TintColor = UIColor.Black;
 
-			UITabBar.Appearance.BarTintColor = UIColor.FromRGB(102, 153, 0);
+			UITabBar.Appearance.BarTintColor = UIColor.FromRGB(102, 153, 0); //#669900
 			UITabBar.Appearance.TintColor = UIColor.White;
 
 			return base.FinishedLaunching (app, options);

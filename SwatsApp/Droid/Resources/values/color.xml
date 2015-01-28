@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<resources>
+	<color name="white">#FFFFFF</color>
+	<color name="black">#000000</color>
+	<color name="ActionBar">#0099CC</color>
+	<color name="TabBar">#669900</color>
+	<color name="TabBarSelected">#75A319</color>
+</resources>
