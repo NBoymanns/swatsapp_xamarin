@@ -12,7 +12,7 @@ namespace SwatsApp
 
 			var settings = new ToolbarItem {
 				Icon = "plus.png",
-				Name = "Nieuwe foto",
+				Text = "Nieuwe foto",
 				Command = new Command(this.MakeNewPhoto)
 			};
 
