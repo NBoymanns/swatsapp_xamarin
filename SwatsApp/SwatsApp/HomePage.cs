@@ -9,7 +9,7 @@ namespace SwatsApp
 {
 	public class HomePage : ContentPage
 	{
-		ListView listView = new ListView(){ ItemTemplate = new DataTemplate(typeof(NewsCell)), RowHeight = 100 };
+		ListView listView = new ListView(){ ItemTemplate = new DataTemplate(typeof(NewsCell)), RowHeight = 200, HasUnevenRows = true };
 
 		public HomePage ()
 		{
@@ -21,13 +21,12 @@ namespace SwatsApp
 				}
 			};
 
-			test ();
+			getNews ();
 		}
 
-		public async void test() {
+		public async void getNews() {
 			APICommunicator communicator = new APICommunicator ();
 			List<News> test = await communicator.getRequest ("http://swatsapp-gae.appspot.com/news_items");
-			Debug.WriteLine ("Testje: {0}", test.Count);
 			listView.ItemsSource = test;
 		}
 	}

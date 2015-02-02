@@ -31,6 +31,7 @@ namespace SwatsApp
 			{
 				HorizontalOptions= LayoutOptions.FillAndExpand
 			};
+
 			nameLabel.SetBinding(Label.TextProperty, "poster");
 
 			var messageLabel = new Label
