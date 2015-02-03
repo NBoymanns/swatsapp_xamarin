@@ -26,6 +26,8 @@ namespace SwatsApp.Droid
 		
 		public static void UpdateIdValues()
 		{
+			global::Gcm.Client.Resource.String.library_name = global::SwatsApp.Droid.Resource.String.library_name;
+			global::ByteSmith.WindowsAzure.Messaging.Resource.String.library_name = global::SwatsApp.Droid.Resource.String.library_name;
 		}
 		
 		public partial class Attribute
@@ -44,20 +46,20 @@ namespace SwatsApp.Droid
 		public partial class Color
 		{
 			
-			// aapt resource value: 0x7f040002
-			public const int ActionBar = 2130968578;
+			// aapt resource value: 0x7f050002
+			public const int ActionBar = 2131034114;
 			
-			// aapt resource value: 0x7f040003
-			public const int TabBar = 2130968579;
+			// aapt resource value: 0x7f050003
+			public const int TabBar = 2131034115;
 			
-			// aapt resource value: 0x7f040004
-			public const int TabBarSelected = 2130968580;
+			// aapt resource value: 0x7f050004
+			public const int TabBarSelected = 2131034116;
 			
-			// aapt resource value: 0x7f040001
-			public const int black = 2130968577;
+			// aapt resource value: 0x7f050001
+			public const int black = 2131034113;
 			
-			// aapt resource value: 0x7f040000
-			public const int white = 2130968576;
+			// aapt resource value: 0x7f050000
+			public const int white = 2131034112;
 			
 			static Color()
 			{
@@ -107,23 +109,39 @@ namespace SwatsApp.Droid
 			}
 		}
 		
+		public partial class String
+		{
+			
+			// aapt resource value: 0x7f040000
+			public const int library_name = 2130968576;
+			
+			static String()
+			{
+				global::Android.Runtime.ResourceIdManager.UpdateIdValues();
+			}
+			
+			private String()
+			{
+			}
+		}
+		
 		public partial class Style
 		{
 			
-			// aapt resource value: 0x7f050001
-			public const int MyActionBarStyle = 2131034113;
+			// aapt resource value: 0x7f060001
+			public const int MyActionBarStyle = 2131099649;
 			
-			// aapt resource value: 0x7f050003
-			public const int MyActionBarTabText = 2131034115;
+			// aapt resource value: 0x7f060003
+			public const int MyActionBarTabText = 2131099651;
 			
-			// aapt resource value: 0x7f050004
-			public const int MyActionBarTabsStyle = 2131034116;
+			// aapt resource value: 0x7f060004
+			public const int MyActionBarTabsStyle = 2131099652;
 			
-			// aapt resource value: 0x7f050002
-			public const int MyActionBarTitle = 2131034114;
+			// aapt resource value: 0x7f060002
+			public const int MyActionBarTitle = 2131099650;
 			
-			// aapt resource value: 0x7f050000
-			public const int MyTheme = 2131034112;
+			// aapt resource value: 0x7f060000
+			public const int MyTheme = 2131099648;
 			
 			static Style()
 			{
