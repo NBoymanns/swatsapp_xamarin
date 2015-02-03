@@ -17,7 +17,9 @@ namespace SwatsApp
 			tp.Children.Add (new NavigationPage (new FotosPage ()) { Title="Foto's", Icon="fotos.png"});
 			tp.Children.Add (new NavigationPage (new AgendaPage ()) { Title="Agenda", Icon="agenda.png"});
 
-			MainPage = tp;
+			var login = new NavigationPage (new LoginPage ());
+
+			MainPage = login;//tp;
 		}
 
 		protected override void OnStart ()
