@@ -34,7 +34,8 @@ namespace SwatsApp
 
 		void OnLoginClicked(object sender, EventArgs e) {
 			//To-Do: Login
-			Navigation.PushModalAsync (GetMainPage ());
+			postLoginCredentials ();
+			//Navigation.PushModalAsync (GetMainPage ());
 		}
 
 		public static Page GetMainPage () {
@@ -43,6 +44,14 @@ namespace SwatsApp
 			tp.Children.Add (new NavigationPage (new FotosPage ()) { Title="Foto's", Icon="fotos.png"});
 			tp.Children.Add (new NavigationPage (new AgendaPage ()) { Title="Agenda", Icon="agenda.png"});
 			return tp;
+		}
+
+		public async void postLoginCredentials() {
+			APICommunicator communicator = new APICommunicator ();
+			String jsonBody = "{\"name\":\"Test gebruiker\",\"device_id\":\"3423423432\"}";
+			//User test = await communicator.postRequest ("http://swatsapp-gae.appspot.com/users", jsonBody);
+			String test = await communicator.postRequest ("http://swatsapp-gae.appspot.com/users", jsonBody);
+			System.Diagnostics.Debug.WriteLine ("Test {0}", test);
 		}
 	}
 }
