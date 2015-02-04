@@ -10,9 +10,17 @@ namespace SwatsApp
 		{
 			Title = "Agenda";
 
+			WebView webView = new WebView {
+				Source = new UrlWebViewSource {
+					Url = "http://www.vcdeswatsers.nl/index.php?pagina=agenda"
+				},
+				VerticalOptions = LayoutOptions.FillAndExpand
+			};
+
+
 			Content = new StackLayout { 
 				Children = {
-					new Label { Text = "Hello Agenda Page" }
+					webView
 				}
 			};
 		}
