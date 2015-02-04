@@ -9,14 +9,15 @@ namespace SwatsApp
 		public FotoCell ()
 		{
 			var image = new Image {
-				HorizontalOptions = LayoutOptions.Start
+				HorizontalOptions = LayoutOptions.Center
 			};
 
-			image.SetBinding (Image.SourceProperty, new Binding ("poster_profile_picture"));
-			image.WidthRequest = image.HeightRequest = 50;
+			image.SetBinding (Image.SourceProperty, new Binding ());
+			image.WidthRequest = image.HeightRequest = 200;
 
 			var viewLayout = new StackLayout () {
-				Padding = new Thickness(10, 10, 10, 10),
+				Padding = new Thickness(10, 5, 5, 10),
+				HorizontalOptions = LayoutOptions.Center, 
 				Children = { image }
 			};
 			View = viewLayout;

@@ -1,10 +1,11 @@
 ﻿using System;
+using System.Collections.Generic;
 
 namespace SwatsApp
 {
 	public class User
 	{
-		public int id {
+		public String id {
 			get;
 			set;
 		}
@@ -20,6 +21,11 @@ namespace SwatsApp
 		}
 
 		public String device_id {
+			get;
+			set;
+		}
+
+		public List<String> photos {
 			get;
 			set;
 		}

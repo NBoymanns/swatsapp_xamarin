@@ -9,12 +9,19 @@ namespace SwatsApp
 {
 	public class APICommunicator
 	{
+		/*
 		public async Task<List<News>> getRequest(string url) {
 
 			var client = new HttpClient ();
 			var result = await client.GetStringAsync(url);
 			List<News> newsItems = JsonConvert.DeserializeObject<List<News>> (result);
 			return newsItems;
+		}*/
+
+		public async Task<string> getRequest(string url) {
+			var client = new HttpClient ();
+			var result = await client.GetStringAsync(url);
+			return result;
 		}
 
 		//public async Task<User> postRequest(string url, string jsonBody)

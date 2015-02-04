@@ -4,6 +4,7 @@ using System.Threading.Tasks;
 using System.Diagnostics;
 
 using Xamarin.Forms;
+using Newtonsoft.Json;
 
 namespace SwatsApp
 {
@@ -26,7 +27,8 @@ namespace SwatsApp
 
 		public async void getNews() {
 			APICommunicator communicator = new APICommunicator ();
-			List<News> newsItems = await communicator.getRequest ("http://swatsapp-gae.appspot.com/news_items");
+			string result = await communicator.getRequest ("http://swatsapp-gae.appspot.com/news_items");
+			List<News> newsItems = JsonConvert.DeserializeObject<List<News>> (result);
 
 			foreach (News item in newsItems) {
 				if (item.message.Length > 225) {
