@@ -11,22 +11,19 @@ namespace SwatsApp
 			Title = "Login";
 
 			var nameEntry = new Entry { Placeholder = "Voor je naam in..." };
-			var passwordEntry = new Entry { Placeholder = "Geef unique ID" };
 
 			Button loginButton = new Button {
 				Text = "Login",
-				BorderWidth = 1,
-				HorizontalOptions = LayoutOptions.CenterAndExpand,
-				VerticalOptions = LayoutOptions.CenterAndExpand,
-				BackgroundColor = Color.Red
+				HorizontalOptions = LayoutOptions.Center,
+				VerticalOptions = LayoutOptions.CenterAndExpand
 			};
 			loginButton.Clicked += OnLoginClicked;
 
 			Content = new StackLayout { 
+				Padding = new Thickness(10, 10, 10, 10),
 				Children = {
 					new Label { Text = "Login om gebruik te kunnen maken van deze app." },
 					nameEntry,
-					passwordEntry,
 					loginButton
 				}
 			};
@@ -34,8 +31,8 @@ namespace SwatsApp
 
 		void OnLoginClicked(object sender, EventArgs e) {
 			//To-Do: Login
-			postLoginCredentials ();
-			//Navigation.PushModalAsync (GetMainPage ());
+			//postLoginCredentials ();
+			Navigation.PushModalAsync (GetMainPage ());
 		}
 
 		public static Page GetMainPage () {
