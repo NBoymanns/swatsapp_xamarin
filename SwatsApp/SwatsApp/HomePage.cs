@@ -9,7 +9,7 @@ namespace SwatsApp
 {
 	public class HomePage : ContentPage
 	{
-		ListView listView = new ListView(){ ItemTemplate = new DataTemplate(typeof(NewsCell)), RowHeight = 200, HasUnevenRows = true };
+		ListView listView = new ListView(){ ItemTemplate = new DataTemplate(typeof(NewsCell)), RowHeight = 200, HasUnevenRows = false };
 
 		public HomePage ()
 		{

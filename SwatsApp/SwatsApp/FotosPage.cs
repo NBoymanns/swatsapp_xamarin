@@ -6,6 +6,8 @@ namespace SwatsApp
 {
 	public class FotosPage : ContentPage
 	{
+		ListView listView = new ListView(){ ItemTemplate = new DataTemplate(typeof(FotoCell)), RowHeight = 100 };
+
 		public FotosPage ()
 		{
 			Title = "Foto's";
@@ -20,7 +22,7 @@ namespace SwatsApp
 
 			Content = new StackLayout { 
 				Children = {
-					new Label { Text = "Hello Foto's Page" }
+					listView
 				}
 			};
 		}
