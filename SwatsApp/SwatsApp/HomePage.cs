@@ -26,8 +26,16 @@ namespace SwatsApp
 
 		public async void getNews() {
 			APICommunicator communicator = new APICommunicator ();
-			List<News> test = await communicator.getRequest ("http://swatsapp-gae.appspot.com/news_items");
-			listView.ItemsSource = test;
+			List<News> newsItems = await communicator.getRequest ("http://swatsapp-gae.appspot.com/news_items");
+
+			foreach (News item in newsItems) {
+				if (item.message.Length > 225) {
+					item.message = item.message.Substring (0, 225);
+					item.message = item.message + "...";
+				}
+			}
+
+			listView.ItemsSource = newsItems;
 		}
 	}
 }

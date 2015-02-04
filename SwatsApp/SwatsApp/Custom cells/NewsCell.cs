@@ -18,6 +18,7 @@ namespace SwatsApp
 			var nameLayout = CreateNameLayout ();
 
 			var viewLayout = new StackLayout () {
+				Padding = new Thickness(10, 10, 10, 10),
 				Orientation = StackOrientation.Horizontal,
 				Children = { image, nameLayout }
 			};
